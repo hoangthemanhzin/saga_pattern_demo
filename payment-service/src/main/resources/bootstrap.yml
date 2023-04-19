@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: payment-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/saga_demo
+    #driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+  #we can active multi profile
+  profiles:
+    active:
+      - order
+      - global
+  cloud:
+    config:
+      uri: http://localhost:8888
+      #name of application used fetch remote properties
+      name: payment-service
+  sql:
+    init:
+      platform: mysql
+      continue-on-error: true
+      mode:
+server:
+  port: 8091

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: order-service
+  #we can active multi profile
+  profiles:
+    active:
+      - order
+      - global
+  cloud:
+    config:
+      uri: http://localhost:8888
+      #name of application used fetch remote properties
+      name: order-service
+server:
+  port: 8092
