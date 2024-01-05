@@ -1,11 +1,12 @@
 # saga_pattern_demo
 
-Saga パターンは、分散トランザクションで広く使用されているパターンです。 このプロジェクトは、佐賀のパターンを再考することを目的としています。 購入アクションの例として、Saga パターンに従って、注文が作成されたときの動作をシミュレートするシステムを構築しました。
+The Saga pattern is a widely used pattern for distributed transactions. This project aims to rethink the Saga pattern. As an example of a purchase action, we followed the Saga pattern and built a system that simulates what happens when an order is created.
 
-プロジェクトの説明
-- 注文書の作成
-- メッセージが支払いサービスと在庫サービスに渡されると、2 つのサービスは別々の機能を実行し、注文が正常に完了したかどうかに関係なく結果を返します。
+Project description
 
-こだわりポイント
-- 異なるマイクロサービス間で (トランザクションを管理することにより) データの一貫性を確保します。
-- 実際の購入の問題を解決する
+Creating a purchase order
+When a message is passed to a payment service and an inventory service, the two services perform separate functions and return results regardless of whether the order was successfully completed or not.
+Special points
+
+Ensure data consistency (by managing transactions) between different microservices.
+Solve actual purchase problems
