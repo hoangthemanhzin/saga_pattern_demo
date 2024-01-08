@@ -6,6 +6,8 @@ spring:
     active:
       - order
       - global
+  kafka:
+    bootstrap-servers: http://localhost:9092
   cloud:
     config:
       uri: http://localhost:8888

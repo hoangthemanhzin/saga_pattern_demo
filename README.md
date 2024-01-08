@@ -10,3 +10,5 @@ Special points
 
 Ensure data consistency (by managing transactions) between different microservices.
 Solve actual purchase problems
+
+![img.png](img.png)

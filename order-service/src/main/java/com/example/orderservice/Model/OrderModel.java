@@ -10,5 +10,4 @@ public class OrderModel {
     private String status;
     // Số tiền hiện có khi thực hiện request Payment :
     private Long amountAvailable;
-
 }

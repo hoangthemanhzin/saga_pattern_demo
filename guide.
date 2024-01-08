@@ -1,0 +1,4 @@
+Khách hàng order 1 đơn hàng kèm theo phương thức thanh toán online:
+(2). OrderService gọi PaymentService: kiểm tra thông tin tài khoản và thanh toán
+(3). PaymentService kiểm tra thông tin thanh toán nếu hợp lệ => thanh toán thành công và thông báo cho OrderService và InventoryService
+(4). InventoryService kiểm tra số lượng hàng hóa nếu đủ đáp ứng cho đơn hàng thì thông báo cho OrderService và lên đơn hàng.
